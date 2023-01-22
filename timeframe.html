@@ -482,7 +482,7 @@
 																	<a href="#" class="text-table-new fw-bolder text-hover-primary fs-6">LOGIN</a>
 																</td>
 																<td class="text-center"> 
-																	<span class="d-flex justify-content-center text-table-new" style="margin-top: 8px;">Forgot Password</span>
+																	<a class="d-flex fw-bolder justify-content-center text-table-new" data-bs-toggle="modal" href="#modalDetail" role="button" style="margin-top: 8px;">Forgot Password</a>
                                                                 </td>
 																<td>
 																	<div class="d-flex justify-content-start flex-shrink-0 d-flex justify-content-center align-items-center">
@@ -572,7 +572,7 @@
 															</tr>
 															<tr class="border-bottom-1" style="border: 1px solid #7E8299;;">	
 																<td class="text-center ps-3"> 
-																	<span class="d-flex justify-content-center text-table-new" style="margin-top: 8px;">Design Dashhboard</span>
+																	<a class="d-flex fw-bolder justify-content-center text-table-new" data-bs-toggle="modal" href="#modalDetail" role="button" style="margin-top: 8px;">Design Dashhboard</a>
                                                                 </td>
 																<td>
 																	<div class="d-flex justify-content-start flex-shrink-0 d-flex justify-content-center align-items-center">
@@ -662,7 +662,7 @@
 															</tr>
 															<tr class="border-bottom-1" style="border: 1px solid #7E8299;;">
 																<td class="text-center ps-3"> 
-																	<span class="d-flex justify-content-center text-table-new" style="margin-top: 8px;">Desain Visual</span>
+																	<a class="d-flex fw-bolder justify-content-center text-table-new" data-bs-toggle="modal" href="#modalDetail" role="button" style="margin-top: 8px;">Desain Visual</a>
                                                                 </td>
 																<td>
 																	<div class="d-flex justify-content-start flex-shrink-0 d-flex justify-content-center align-items-center">
@@ -923,6 +923,110 @@
 								</svg>
 							</span>
 						</button>
+					</div>
+					<!--end::Modal body-->
+				</div>
+				<!--end::Modal content-->
+			</div>
+			<!--end::Modal dialog-->
+		</div>
+
+		<!-- Modal Detail Task -->
+		<div class="modal fade" id="modalDetail" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog modal-dialog-centered mw-650px">
+				<!--begin::Modal content-->
+				<div class="modal-content">
+					<!--begin::Modal header-->
+					<div class="modal-header">
+						<!--begin::Modal title-->
+						<h2>Detail Task</h2>
+						<!--end::Modal title-->
+						<!--begin::Close-->
+						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+							<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+							<span class="svg-icon svg-icon-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+									<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+								</svg>
+							</span>
+							<!--end::Svg Icon-->
+						</div>
+						<!--end::Close-->
+					</div>
+					<!--end::Modal header-->
+					<!--begin::Modal body-->
+					<div class="modal-body pb-lg-10 px-lg-10">
+                        <div class="modal-fv-row mb-5">
+                            <label class="fs-6 fw-bold mb-2" for="divisi">
+								<span class="required">Judul Tasl</span>
+							</label>
+							<div class="position-relative d-flex align-items-center">
+								<!--begin::Icon-->
+								<span class="svg-icon svg-icon-2 position-absolute mx-4">
+									<i class="fa-duotone fa-h1 fs-5"></i>
+								</span>
+								<!--end::Icon-->
+								<input type="text" class="form-control form-control-solid ps-12" value="Task 1" readonly/>
+							</div>
+                        </div>
+						<div class="fv-row mb-5">
+							<!--begin::Label-->
+							<label class="fs-6 fw-bold mb-2" for="nama">
+								<span class="required">Tenggat</span>
+							</label>
+							<!--end::Label-->
+							<div class="position-relative d-flex align-items-center">
+								<!--begin::Icon-->
+								<span class="svg-icon svg-icon-2 position-absolute mx-4">
+									<i class="fa-duotone fa-hourglass-end fs-5"></i>
+								</span>
+								<!--end::Icon-->
+								<input type="text" class="form-control form-control-solid ps-12" value="20 Desember 2023" readonly>
+							</div>
+							<div class="text-danger mx-4 fw-bold" data-field="nama"></div>
+						</div>
+                        <div class="fv-row mb-5">
+                            <label class="fs-6 fw-bold mb-2" for="keterangan">
+								<span class="required">Keterangan</span>
+							</label>
+                            <div class="position-relative d-flex align-items-center">       
+                                <input class="form-control form-control form-control-solid" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quasi minus aperiam veniam porro, ipsam nihil molestiae maxime praesentium nesciunt cumque. Quod quae obcaecati optio blanditiis odit quos minus magni." readonly>
+                            </div>
+                        </div>
+                        <div class="fv-row mb-5">
+							<label class="fs-6 fw-bold mb-2" for="divisi">
+								<span class="required">Pekerja</span>
+							</label>
+							<div class="position-relative d-flex align-items-center">
+								<!--begin::Icon-->
+								<span class="svg-icon svg-icon-2 position-absolute mx-4">
+									<i class="fa-duotone fa-user fs-5"></i>
+								</span>
+								<!--end::Icon-->
+								<input type="text" class="form-control form-control-solid ps-12" value="Brad Simmons" readonly>
+							</div>
+						</div>
+						<div class="fv-row mb-5">
+							<label class="fs-6 fw-bold mb-2" for="divisi">
+								<span class="required">Histori</span>
+							</label>
+							<div class="position-relative d-flex flex-column">
+								<div class="history d-flex mb-3">
+									<li class="d-flex align-self-baseline ps-2 py-2">
+										<span class="bullet bg-primary me-5"></span> 
+									</li>
+									<span class="text-dark fw-medium fs-6">2 November 2023 <br> Teks Terlalu kecil</span>
+								</div>
+								<div class="history d-flex mb-3">
+									<li class="d-flex align-self-baseline ps-2 py-2">
+										<span class="bullet bg-primary me-5"></span> 
+									</li>
+									<span class="text-dark fw-medium fs-6">3 November 2023 <br> Teks Terlalu besar</span>
+								</div>
+							</div>
+						</div>
 					</div>
 					<!--end::Modal body-->
 				</div>
