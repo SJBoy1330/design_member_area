@@ -477,53 +477,60 @@
 												<!--begin::Table container-->
 												<div class="table-responsive">
 													<!--begin::Table-->
-													<table class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4" id="kt_table_projek">
+													<table class="table gs-0 gy-4" id="kt_table_timeframe" style="border-bottom: 1px solid #7E8299;">
 														<!--begin::Table head-->
-														<thead>
+														<thead class="border-1" style="border: 1px solid #7E8299;">
 															<tr class="fw-bolder text-muted">
-																<th class="w-25px">No</th>
-																<th class="min-w-150px">Modul</th>
-																<th class="min-w-140px">Task</th>
-                                                                <th class="min-w-150px">Worker</th>
-																<th class="min-w-100px text-end">Actions</th>
+																<th class="min-w-50px">
+																	<span class="d-flex justify-content-center">No</span>
+																</th>
+																<th class="min-w-150px text-center">
+																	<span class="d-flex justify-content-center">Modul</span>
+																</th>
+																<th class="min-w-150px text-sm-center">
+																	<span class="d-flex justify-content-center">Task</span>
+																</th>
+                                                                <th class="min-w-125px text-center">
+																	<span class="d-flex justify-content-center">Worker</span>
+																</th>
+																<th class="min-w-125px text-center">
+																	<span class="d-flex justify-content-center">Aksi</span>
+																</th>
 															</tr>
 														</thead>
 														<!--end::Table head-->
 														<!--begin::Table body-->
 														<tbody>
-															<tr>
-																<td>
-																	<span class="fw-bolder tex-dark fs-6">1</span>
+															<tr class="border-bottom-1" style="border: 1px solid #7E8299;;">
+																<td rowspan="3" align="center">
+																	<span  class="text-table-new fw-bolder fs-6">1</span>
 																</td>
-																<td>
-																	<span class="fw-bolder tex-dark">Login Page</span>
+																<td rowspan="3" align="center">
+																	<span  class="text-table-new fw-bolder fs-6">LOGIN</span>
 																</td>
-																<td>
-                                                                    <div class="d-flex flex-column">
-                                                                        <li class="d-flex align-items-center py-2">
-                                                                            <span class="bullet me-5"></span> Teks terlalu kecil untuk tombol login
-                                                                        </li>
-                                                                        <li class="d-flex align-items-center py-2">
-                                                                            <span class="bullet me-5"></span> Seharusnya untuk tombol login berbentuk kotak beradius 10px
-                                                                        </li>
-                                                                        <li class="d-flex align-items-center py-2">
-                                                                            <span class="bullet me-5"></span> Untuk keterangan nya seharusnya lebih tebal agar terlihat
-                                                                        </li>
-                                                                        <li class="d-flex align-items-center py-2">
-                                                                            <span class="bullet me-5"></span> Untuk tulisan forgot password/lupa kata sandi jangan di buat italix namun dibuat normal
-                                                                        </li>
-                                                                        <li class="d-flex align-items-center py-2">
-                                                                            <span class="bullet me-5"></span> Kurang satu inputan untuk login page, ditambahkan input username
-                                                                        </li>
-                                                                    </div>
+																<td class="text-center"> 
+																	<span  class="text-table-new fw-bolder fs-6">Teks terlalu kecil untuk tombol login</span>
                                                                 </td>
-                                                                <td>
-																	<span class="fw-bolder tex-dark">Brad Simmons</span>
+																<td class="text-center">
+																	<span  class="text-table-new fw-bolder fs-6">Brad Simmon</span>
 																</td>
-																<td>
-																	<div class="d-flex justify-content-end flex-shrink-0">
+																<td class="text-center">
+																	<span class="text-table-new ps-3 mx-2">
 																		<a class="btn btn-sm btn-success" data-bs-toggle="modal" href="#modalAksi" role="button">Selesai</a>
-																	</div>
+																	</span>
+																</td>
+															</tr>
+															<tr class="border-bottom-1" style="border: 1px solid #7E8299;;">	
+																<td class="text-center"> 
+																	<span  class="text-table-new fw-bolder fs-6">Seharusnya untuk tombol login berbentuk kotak beradius 10px</span>
+                                                                </td>
+																<td class="text-center">
+																	<span  class="text-table-new fw-bolder fs-6">Jhon Doe</span>
+																</td>
+																<td class="text-center">
+																	<span class="text-table-new ps-3 mx-2">
+																		<a class="btn btn-sm btn-danger" data-bs-toggle="modal" href="#modalAksi" role="button">Revisi</a>
+																	</span>
 																</td>
 															</tr>
 														</tbody>
